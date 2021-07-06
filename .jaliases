@@ -1,0 +1,6 @@
+# git
+alias gru="!git branch --merged | grep -v -P '^\\*|master|develop' | xargs -n1 -r git branch -d"
+alias gcm="git checkout master"
+alias gcd="git checkout develop"
+alias gcu="git checkout uat"
+alias gtfo="gl && gm && gru"
